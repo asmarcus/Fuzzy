@@ -45,12 +45,12 @@ a.close:hover { background: #4a6397; }
 #nodeContent { 
   display: block;
   width: 45%;
-  background: #b5c1cc;
+  background: #fff;
   padding: 10px 11px;
   padding-top: 35px;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
 }
 
@@ -91,21 +91,25 @@ a.close:hover { background: #4a6397; }
 #navigation li a:hover, #navigation li a.open { color: #fff; background: #484e57; }
 
 
-#content {
+/*#map {
+  position: absolute;
   display: block;
   margin-left: 200px;
   padding: 10px 15px;
-
+  right: 0;
+  width: 45%;
+  top: 0;
+  height: 100%;
 }
 
-#content p {
+#map p {
   color: #fff;
   text-shadow: 2px 1px 0px rgba(0,0,0,0.7);
-}
+}*/
 
 
 /* right navigation */
-#aboutright { 
+/*#aboutright { 
   display: block;
   width: 350px;
   padding: 8px 11px;
@@ -114,9 +118,9 @@ a.close:hover { background: #4a6397; }
   top: 0;
   right: 0;
   height: 100%;
-}
+}*/
 
-nav#right { 
+/*nav#right { 
   position: absolute;
   width: 180px; 
   min-height: 100%;
@@ -124,11 +128,11 @@ nav#right {
   padding: 0px 8px;
   padding-top: 220px;
   background: #343638;
-}
+}*/
 
 
 /* top navigation */
-#mainpage nav#top {
+/*#mainpage nav#top {
   position: absolute;
   height: 120px; 
   width: 100%;
@@ -144,9 +148,9 @@ nav#top #navigation li {
   margin-right: 6px;
 }
 
-
+*/
 /* bottom navigation */
-#mainpage nav#bottom {
+/*#mainpage nav#bottom {
   position: fixed;
   height: 120px; 
   width: 100%;
@@ -162,4 +166,4 @@ nav#bottom #navigation li {
   margin-right: 6px;
 }
 
-.fixed-btm { padding-bottom: 120px; /* add extra space when nav is fixed at the bottom */ }
+.fixed-btm { padding-bottom: 120px;*/ /* add extra space when nav is fixed at the bottom */ }

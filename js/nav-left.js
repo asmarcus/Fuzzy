@@ -3,8 +3,12 @@ $(document).ready(function(){
     e.preventDefault();
     var hrefval = $(this).attr("href");
     
+    console.log(hrefval);
+
     if(hrefval == "#notepad") {
       var distance = $('#mainpage').css('left');
+
+    console.log(distance);
       
       if(distance == "auto" || distance == "0px") {
         $(this).addClass("open");
@@ -14,6 +18,15 @@ $(document).ready(function(){
       }
     }
   }); // end click event handler
+});
+  // $('#openNote').on('click', function( e ) {
+  //   e.preventDefault();
+
+  //   openSidepage();
+  // }); 
+
+// end click event handler
+
   
   $("#navigation li a").on("hover", function(){
     var classval = $(this).hasClass("hovertrigger");
@@ -38,11 +51,16 @@ $(document).ready(function(){
       left: '45%'
     }, 400, 'easeOutBack'); 
   }
+
+    function openRightpage() {
+    $('#mainpage').animate({
+      left: '90%'
+    }, 400, 'easeOutBack'); 
+  }
   
   function closeSidepage(){
     $("#navigation li a").removeClass("open");
     $('#mainpage').animate({
       left: '0px'
     }, 400, 'easeOutQuint');  
-  }
-}); 
+  };
