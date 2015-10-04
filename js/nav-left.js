@@ -19,6 +19,30 @@ $(document).ready(function(){
     }
   }); // end click event handler
 });
+
+$(document).ready(function(){
+  $("#navigation li a").on("click", function(e){
+    e.preventDefault();
+    var hrefval = $(this).attr("href");
+    
+    console.log(hrefval);
+
+    if(hrefval == "#nodeContent") {
+      var distance = $('#mainpage').css('left');
+
+    console.log(distance);
+      
+      if(distance == "576px" || distance == "0px") {
+        $(this).addClass("open");
+        openRightpage();
+      } else {
+        closeSidepage();
+      }
+    }
+  }); // end click event handler
+});
+
+
   // $('#openNote').on('click', function( e ) {
   //   e.preventDefault();
 
